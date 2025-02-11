@@ -4301,6 +4301,10 @@ MODULE module_mp_thompson
             elseif(prw_vcd(k).lt.0)then
                prw_vcde1(k) = -1*prw_vcd(k)*dt
             endif
+            !---Daniel
+            lfus2=lfus
+            orho=1
+            !---------
 !heating/cooling diagnostics
             tpri_inu1(k) = pri_inu(k)*lsub*ocp(k)*orho * (1-IFDRY)*DT
 
